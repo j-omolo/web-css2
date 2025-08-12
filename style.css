@@ -1,0 +1,456 @@
+/* Base styles and CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Container widths */
+.main-container, .hero-content, .testimonial-container, .footer-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header with Flexbox */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    /* Flexbox for header layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+/* Navigation with Flexbox */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0066cc;
+}
+
+/* Mobile menu button (hidden on desktop) */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+/* Hero section */
+.hero {
+    background-color: #0066cc;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: white;
+    color: #0066cc;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container using CSS Grid */
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main content takes 3/4, sidebar takes 1/4 */
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Main content area */
+.main-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Service cards using Flexbox */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.card {
+    flex: 1 1 calc(50% - 1.5rem); /* Two cards per row on desktop */
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Feature grid using CSS Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-widget {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.news-list li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.news-list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0052a3;
+}
+
+/* Testimonials section with Flexbox */
+.testimonials {
+    background-color: #f0f5ff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    flex: 1 1 calc(33.333% - 2rem); /* Three testimonials per row */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.client {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    flex: 1 1 calc(33.333% - 2rem); /* Three sections per row */
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 50px;
+    height: 2px;
+    background-color: #0066cc;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-section a {
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+    /* Adjust grid layout */
+    .main-container {
+        grid-template-columns: 2fr 1fr; /* Slightly reduce main content width */
+    }
+    
+    /* Adjust card layout */
+    .card {
+        flex: 1 1 calc(50% - 1.5rem); /* Keep two cards per row */
+    }
+    
+    /* Adjust testimonial layout */
+    .testimonial {
+        flex: 1 1 calc(50% - 2rem); /* Two testimonials per row */
+    }
+    
+    /* Reduce font sizes slightly */
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile (up to 767px) */
+@media screen and (max-width: 767px) {
+    /* Stack grid layout */
+    .main-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    /* Adjust header for mobile */
+    header {
+        padding: 1rem;
+    }
+    
+    /* Hide desktop navigation */
+    nav {
+        display: none;
+    }
+    
+    /* Show mobile menu button */
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    /* Adjust card layout */
+    .card {
+        flex: 1 1 100%; /* Full width cards */
+    }
+    
+    /* Adjust feature grid */
+    .feature-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    
+    /* Adjust testimonial layout */
+    .testimonial {
+        flex: 1 1 100%; /* Full width testimonials */
+    }
+    
+    /* Adjust footer sections */
+    .footer-section {
+        flex: 1 1 100%; /* Full width footer sections */
+    }
+    
+    /* Reduce font sizes further */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Small mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .main-content, .sidebar-widget {
+        padding: 1rem;
+    }
+    
+    .service-cards, .feature-grid, .testimonial-container {
+        gap: 1rem;
+    }
+}

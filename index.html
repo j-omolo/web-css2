@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox and Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Flexbox for navigation alignment -->
+    <header>
+        <div class="logo">TechSolutions</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Modern Web Design Solutions</h1>
+            <p>Creating responsive, accessible, and beautiful websites using the latest CSS techniques.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Main content area using CSS Grid for layout -->
+    <main class="main-container">
+        <!-- Main content -->
+        <section class="main-content">
+            <h2>Our Services</h2>
+            
+            <!-- Service cards using Flexbox -->
+            <div class="service-cards">
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Creative and user-friendly designs that engage your audience and reflect your brand identity.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Development</h3>
+                    <p>Clean, efficient code that brings your designs to life with modern web technologies.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Websites that look and function perfectly on all devices, from desktops to smartphones.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>Optimized for speed and efficiency to provide the best user experience possible.</p>
+                </div>
+            </div>
+
+            <h2>About Our Approach</h2>
+            <p>At TechSolutions, we believe in creating websites that not only look great but also perform exceptionally well. Our approach combines aesthetic design with technical excellence.</p>
+            <p>We use modern CSS techniques like Flexbox and Grid to create layouts that are both visually appealing and structurally sound. This ensures your website is not only beautiful but also maintainable and scalable.</p>
+            
+            <!-- Feature grid using CSS Grid -->
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Responsive Design</h3>
+                    <p>Adapts to any screen size</p>
+                </div>
+                <div class="feature">
+                    <h3>Accessibility</h3>
+                    <p>Inclusive for all users</p>
+                </div>
+                <div class="feature">
+                    <h3>Performance</h3>
+                    <p>Fast loading times</p>
+                </div>
+                <div class="feature">
+                    <h3>SEO Friendly</h3>
+                    <p>Optimized for search engines</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Latest News</h3>
+                <ul class="news-list">
+                    <li>
+                        <h4>New CSS Features in 2023</h4>
+                        <p>Exciting developments in the world of CSS...</p>
+                    </li>
+                    <li>
+                        <h4>The Rise of Responsive Web Design</h4>
+                        <p>How mobile-first design is changing the web...</p>
+                    </li>
+                    <li>
+                        <h4>Accessibility Guidelines Updated</h4>
+                        <p>New standards for creating inclusive websites...</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Contact Us</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Testimonials section with Flexbox -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"TechSolutions transformed our online presence with a beautiful, responsive website that has significantly increased our customer engagement."</p>
+                <div class="client">- Sarah Johnson, Marketing Director</div>
+            </div>
+            <div class="testimonial">
+                <p>"The attention to detail and technical expertise of the team is outstanding. Our new website loads faster and works flawlessly on all devices."</p>
+                <div class="client">- Michael Chen, CEO</div>
+            </div>
+            <div class="testimonial">
+                <p>"Working with TechSolutions was a pleasure from start to finish. They understood our needs and delivered beyond our expectations."</p>
+                <div class="client">- Emily Rodriguez, Small Business Owner</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechSolutions</h3>
+                <p>Creating beautiful, responsive websites that drive results.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@techsolutions.com</p>
+                <p>Phone:07745678900</p>
+                <p>Address: 123 Web Street, Digital City</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TechSolutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
